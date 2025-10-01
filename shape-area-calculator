@@ -1,0 +1,21 @@
+shape = input("Enter your shape (triangle, square, rectangle): ").lower()
+
+if shape == "triangle":
+    a = float(input("Enter the base: "))
+    h = float(input("Enter the height: "))
+    area = 0.5 * a * h
+    print("Area of the triangle is:", area)
+
+elif shape == "square":
+    a = float(input("Enter the side length: "))
+    area = a * a
+    print("Area of the square is:", area)
+
+elif shape == "rectangle":
+    a = float(input("Enter the length: "))
+    b = float(input("Enter the width: "))
+    area = a * b
+    print("Area of the rectangle is:", area)
+
+else:
+    print("Invalid shape")
